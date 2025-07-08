@@ -1,0 +1,8 @@
+[
+  { "id": "J1", "aqi": 85, "noiseLevel": 60, "humidity": 50 },
+  { "id": "J2", "aqi": 140, "noiseLevel": 70, "humidity": 55 },
+  { "id": "J3", "aqi": 220, "noiseLevel": 85, "humidity": 70 },
+  { "id": "J4", "aqi": 100, "noiseLevel": 65, "humidity": 60 },
+  { "id": "J5", "aqi": 180, "noiseLevel": 75, "humidity": 45 },
+  { "id": "J6", "aqi": 300, "noiseLevel": 95, "humidity": 80 }
+]

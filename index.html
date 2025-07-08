@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>🚦 Smart City Traffic Monitoring Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap @5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons @1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="text-center py-4 bg-primary text-white">
+    <h1>🚦 Smart City Traffic Monitoring Dashboard</h1>
+    <p>Real-Time Signals | AQI Index | Noise Level | Humidity | Route Planning</p>
+  </header>
+
+  <main class="py-4">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="map-container">
+            <svg id="trafficMap" viewBox="0 0 800 600"></svg>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="stats-panel">
+            <div class="card mb-4 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">📊 Live Metrics</h5>
+                <ul id="junctionStatus" class="list-group list-group-flush"></ul>
+              </div>
+            </div>
+            <div class="card shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🚗 Total Vehicles: <span id="totalVehicles">0</span></h5>
+                <form class="route-form">
+                  <div class="mb-3">
+                    <label for="datasetSelect" class="form-label">Select Dataset</label>
+                    <select id="datasetSelect" class="form-select"></select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="startJunction" class="form-label">Start Junction</label>
+                    <select id="startJunction" class="form-select"></select>
+                  </div>
+                  <div class="mb-3">
+                    <label for="endJunction" class="form-label">End Junction</label>
+                    <select id="endJunction" class="form-select"></select>
+                  </div>
+                  <button type="button" onclick="findAndDrawPath()" class="btn btn-primary w-100">Find Optimal Route</button>
+                  <div id="routeResult" class="mt-3"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-light text-center py-3 mt-5 border-top">
+    <p class="mb-0">© 2025 Smart Traffic Management System • Real-Time Traffic Monitoring</p>
+  </footer>
+
+  <!-- Script -->
+  <script src="script.js"></script>
+</body>
+</html>
