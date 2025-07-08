@@ -1,10 +1,10 @@
-# 🚦 Smart City Infrastructure Monitoring Using IoT and Cloud Services
+# Smart City Infrastructure Monitoring Using IoT and Cloud Services
 
 This project is a simulation of a Smart City Traffic and Environmental Monitoring system. It visualizes real-time data like Air Quality Index (AQI), noise level, and humidity across six major junctions, dynamically changing traffic signals based on pollution data. Initially designed using AWS services, this version uses a **local dataset** to avoid cloud costs and runs entirely offline.
 
 ---
 
-## 📌 Features
+## Features
 
 - Real-time simulation of six traffic junctions (J1–J6)
 - Traffic signals (Green/Yellow/Red) adapt based on AQI values
@@ -16,7 +16,7 @@ This project is a simulation of a Smart City Traffic and Environmental Monitorin
 
 ---
 
-## 🖥️ Tech Stack
+## Tech Stack
 
 - **Frontend**: HTML, CSS, JavaScript
 - **Visualization**: SVG for map and vehicle animations
@@ -25,5 +25,11 @@ This project is a simulation of a Smart City Traffic and Environmental Monitorin
 
 ---
 
-## 📂 Folder Structure
+## Folder Structure
+smart-city-iot-dashboard/
+├── index.html
+├── script.js
+├── styles.css
+├── sample_data.json
+└── README.md
 
